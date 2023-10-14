@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>zwigato</title>
+    <link rel="icon" href="zwigato.png" type="image/x-icon">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .div1{
+            display: flex;
+            flex-direction: column;
+        }
+        .div11{
+            width: 100%;
+            height: 90px;
+        }
+        .div12{
+            width: 100%;
+            height: 460px;
+        }
+        .div13{
+            width: 100%;
+            height: 208px;
+        }
+        .div14{
+            width: 100%;
+            height: 200px;
+            background-color: rgb(24, 18, 15);
+            text-align: center;
+        }
+        #logo{
+            width: 160px;
+        }
+        .div111{
+            padding-top: 4px;
+            display: flex;
+            justify-content: center;
+        }
+        .div111a{
+            display: flex;
+            gap: 30px;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        .div111b{
+            display: flex;
+            gap: 50vw; 
+            align-items: center;
+            flex-shrink: 1;
+            flex-grow: 0;
+        }
+        #login{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(255, 102, 0);
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        #login:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 0px 7px 10px rgb(255, 102, 0);
+            transition: 0.6s;
+        }
+        #signup{
+            width: 100px;
+            height: 50px;
+            background-color: rgb(255, 102, 0);
+            border: none;
+            border-radius: 10px;
+            font-size: 17px;
+            font-weight: 600;
+        }
+        #signup:hover{
+            background-color: black;
+            color: white;
+            box-shadow: 0px 7px 10px rgb(255, 102, 0);
+            transition: 0.6s;
+        }
+        #heading1{
+            font-size: 70px;
+            text-align: center;
+            top: 160px;
+            position: relative;
+        }
+        #heading11{
+            font-size: 30px;
+            text-align: center;
+            top: 90px;
+            position: relative;
+        }
+        #heading1p{
+            top: 20px;
+            text-align: center;
+            position: relative;
+            font-size: 20px;
+            font-weight: 800;
+        }
+        #heading1img{
+            width: 100%;
+            height: 460px;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0.6;
+        }
+        #heading2img{
+            width: 100%;
+            height: 210px;
+            object-fit: cover;
+            position: absolute;
+            opacity: 0.3;
+        }
+        #heading2{
+            position: relative;
+            top: 10px;
+            font-size: 30px;
+            text-align: center;
+            image-rendering: pixelated;
+        }
+        .list{
+            position: relative;
+            top: 45px;
+            display: flex;
+            font-size: 35px;
+            justify-content: center;
+            gap: 80px;
+            font-weight: 1000;
+            list-style: square;
+        }
+        #note{
+            padding-top: 20px;
+            color: rgb(133, 132, 132);
+            font-size: 18px;
+        }
+        #copyright{
+            padding-top: 80px;
+            color: gold;
+            font-size: 20px;
+        }
+        @media(max-width:600px){
+            .div1{
+                display: flex;
+                flex-direction: column;
+            }
+            .div11{
+                width: 100%;
+                height: 60px;
+            }
+            .div12{
+                width: 100%;
+                height: 200px;
+            }
+            .div13{
+                width: 100%;
+                height: 240px;
+            }
+            .div14{
+                width: 100%;
+                height: 270px;
+                background-color: rgb(24, 18, 15);
+                text-align: center;
+            }
+            #logo{
+                width: 110px;
+            }
+            .div111{
+                padding-top: 0px;
+                display: flex;
+                justify-content: center;
+            }
+            .div111a{
+                display: flex;
+                gap: 20px;
+                flex-shrink: 0;
+            }
+            .div111b{
+                display: flex;
+                gap: 25vw; 
+                align-items: center;
+                flex-shrink: 0;
+            }
+            #login{
+                width: 60px;
+                height: 30px;
+                background-color: rgb(255, 102, 0);
+                border: none;
+                border-radius: 10px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            #login:hover{
+                background-color: black;
+                color: white;
+                box-shadow: 0px 7px 10px rgb(255, 102, 0);
+                transition: 0.6s;
+            }
+            #signup{
+                width: 60px;
+                height: 30px;
+                background-color: rgb(255, 102, 0);
+                border: none;
+                border-radius: 10px;
+                font-size: 12px;
+                font-weight: 600;
+            }
+            #signup:hover{
+                background-color: black;
+                color: white;
+                box-shadow: 0px 7px 10px rgb(255, 102, 0);
+                transition: 0.6s;
+            }
+            #heading1{
+                font-size: 25px;
+                text-align: center;
+                top: 70px;
+                position: relative;
+            }
+            #heading11{
+                font-size: 20px;
+                text-align: center;
+                top: 30px;
+                position: relative;
+            }
+            #heading1p{
+                top: 10px;
+                text-align: center;
+                position: relative;
+                font-size: 15px;
+                font-weight: 800;
+            }
+            #heading1img{
+                width: 100%;
+                height: 200px;
+                object-fit: cover;
+                position: absolute;
+                opacity: 0.6;
+            }
+            #heading2img{
+                width: 100%;
+                height: 240px;
+                object-fit: cover;
+                position: absolute;
+                opacity: 0.3;
+            }
+            #heading2{
+                position: relative;
+                top: 10px;
+                font-size: 25px;
+                text-align: center;
+                image-rendering: pixelated;
+            }
+            .list{
+                position: relative;
+                top: 65px;
+                display: flex;
+                font-size: 20px;
+                justify-content: center;
+                gap: 80px;
+                font-weight: 1000;
+                list-style: square;
+            }
+            #note{
+                padding-top: 20px;
+                color: rgb(133, 132, 132);
+                font-size: 18px;
+            }
+            #copyright{
+                padding-top: 70px;
+                color: gold;
+                font-size: 16px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <div class="div11">
+            <div class="div111">
+                <div class="div111b">
+                        <img id="logo" src="zwigato.png" alt="">
+                    <div class="div111a">
+                        <a href="login.html"><button id="login">Login</button></a>
+                        <a href="signup.html"><button id="signup">Sign Up</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="div12">
+            <img id="heading1img" src="heading1img.jpg" alt="img">
+            <p id="heading1p">Login to continue</p>
+            <h1 id="heading11">Get upto 50% Off</h1>
+            <h1 id="heading1">Order the food in one click</h1>
+        </div>
+        <hr>
+        <div class="div13">
+            <img id="heading2img" src="headingimage2.avif" alt="img">
+            <h2 id="heading2">The Food delivery service is Available in selected region</h2>
+            <div class="list">
+                <li>Pune</li>
+                <li>Ahmednagar</li>
+            </div>
+        </div>
+        <hr>
+        <div class="div14">
+            <p id="note">Note: This website contents are only visible to selected devices only</p>
+            <p id="copyright">This website is created by ©saurabhperane ©vedantghorpade ©sahilwable ©anujwagh</p>
+        </div>
+        <hr>
+    </div>
+</body>
+</html>
