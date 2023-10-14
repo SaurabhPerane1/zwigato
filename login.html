@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="icon" href="zwigato.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .container {
+            max-width: 400px;
+            background-color: #fff;
+            margin: 0 auto;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid #677dff;
+            border-radius: 3px;
+        }
+
+        button {
+            width: 423px;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+        #signup{
+            text-align: center;
+            font-size: 20px;
+            padding-left: 30px;
+        }
+
+
+        @media (max-width:600px){
+            .container {
+                width: 395px;
+            }
+
+            .form-group {
+                width: 95%;
+            }
+
+            button {
+                width: 395px;
+            }
+
+            #signup{
+                padding-right: 30px;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        <form action="main.html" method="get">
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="text" id="password" name="password" required>
+            </div>
+            <button type="submit">Submit</button>
+
+            <a href="signup.html"><p id="signup">Sign Up</p></a>
+        </form>
+    </div>
+</body>
+</html>
